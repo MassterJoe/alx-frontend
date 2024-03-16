@@ -8,13 +8,14 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- 
+ * {
+    box-sizing: border-box;
+}
 
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
-    box-sizing: border-box;
-}
+  }
   
   /* Sections
      ========================================================================== */
@@ -354,9 +355,8 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 62.5%; /*All fonts in the html element should be at 62.5% of their normal size*/
-
-}
+    font-size: 62.5%; /*All fonts in the html element should be at 62.5% of their normal size*/  
+  }
 
 :root {
     --color-primary: #d73953;
