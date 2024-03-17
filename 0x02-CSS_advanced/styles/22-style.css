@@ -543,11 +543,10 @@ padding: calc(var(--section-padding)/2);
   clear: both;
 }
 
-[data-section-theme=“dark”] {
-color: var(--color-white);
+[data-section-theme="dark"] {
+--text-color: var(--color-white);
 --section-title-color: var(--color-white);
 background-color: var(--color-black);
-
 }
 
 
