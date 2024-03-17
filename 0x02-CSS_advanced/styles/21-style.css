@@ -533,7 +533,7 @@ list-style: none;
 /*Select all classes that start with col-*/
 [class^="col-"] {
 float: left;
-padding: var(--section-padding);
+padding: calc(var(--section-padding)/2);
 }
 
 /*css rule that creates a new row after each instance of the class row*/
