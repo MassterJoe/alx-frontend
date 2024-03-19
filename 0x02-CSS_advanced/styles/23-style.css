@@ -554,6 +554,16 @@ background-color: var(--color-black);
   color: var(--text-color);
 }
 
+.social-link{
+  display: block;
+}
+
+/*Style the social-link class that also selects the svg children*/
+.social-link svg{
+  color: var(--text-color);
+}
+
+
 .footer-copyright {
   margin: 0;
   font-size: var(--font-size-small);
