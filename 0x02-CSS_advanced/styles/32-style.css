@@ -411,6 +411,8 @@ html {
     --header-logo-link-position: absolute;
     --header-logo-link-top: -1rem;
     --header-logo-link-left: 0;
+    --transition-duration: .3s;
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
   }
         
 body {
@@ -486,6 +488,7 @@ background-color: var(--color-light-grey);
 }
 
 
+
 .section {
   padding: var(--section-padding);
 }
@@ -495,6 +498,7 @@ background-color: var(--color-light-grey);
 .section-header {
   text-align: var(--section-header-align);    
   padding: var(--section-header-padding);  
+
 }
 
 .section-body {
@@ -534,6 +538,7 @@ background-size: 90rem auto;
 
 .section-hero .section-title{
   margin-bottom: 5rem;
+  padding-top: 1.7rem;
 }
 
 .section-hero .section-inner{
@@ -607,6 +612,7 @@ left: 0;
 background-color: var(--color-white);
 width: 0;
 height: calc(var(--section-padding)*0.20);
+transition: var(--transition-duration);
 }
 
 .nav .nav-link .nav-item::before{
@@ -672,6 +678,7 @@ vertical-align: bottom;
   left: -0.1rem;
   right: -0.1rem;
   z-index: 1; /*Depth*/
+transition: var(--transition-duration);
 }
 
 .card-work:hover .card-inner {
@@ -705,8 +712,30 @@ content: none;
   opacity: 1;
 }
 
+.card-work:hover .card-image {
+  transform: scale(1.2);
+}
+
+
+.card-work:hover .card-outer {
+  transform: scale(0.95);
+}
+
+
 .card-testimonial .card-quote{
 position: relative;
+
+}
+
+
+.card-testimonial .card-quote::before{
+content: \201C;
+position: absolute;
+top: -4.5rem;
+left: -1rem;
+color: #efeded;
+font-size: 10rem;
+z-index: -1;
 }
 
 /*css rule that creates a new row after each instance of the class row*/
